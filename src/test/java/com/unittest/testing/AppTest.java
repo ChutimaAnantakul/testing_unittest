@@ -100,7 +100,6 @@ public class AppTest
 		boolean actual = object.isBound(input);
 		assertEquals(expected,actual);
 	}
-
 	@Test
 	public void testResult1001input1001() {
 		double input = 1001;
