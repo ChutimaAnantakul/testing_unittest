@@ -16,4 +16,16 @@ public class Fahrengeit {
 		 }
 		 return isResult;
 	 }
+	 
+	 public double calculate() {
+		 double Fahrengeit = this.celcius*9/5+32;
+		 return Fahrengeit;
+	 }
+	 
+	 public String toString() {
+//		 $number celcius = $number Fahrengeit
+		 double Fahrengeit = this.calculate();
+		 double celcius = this.getCelcius();
+		 return Math.round(celcius)+" celcius = "+Math.round(Fahrengeit)+" Fahrengeit";
+	 }
 }
