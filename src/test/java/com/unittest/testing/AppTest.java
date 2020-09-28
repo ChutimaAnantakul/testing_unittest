@@ -169,4 +169,5 @@ public class AppTest
 		boolean actual = object.isBound(input);
 		assertEquals(expected,actual);
 	}
+//	-------endtest
 }
