@@ -306,7 +306,8 @@ public class AppTest
 			double input = 0;
 			double expected = 32.00;
 			object.input(input);
-			double actual = object.calculate();
+			object.calculate();
+			double actual = object.getFahrenheit();
 			assertEquals(expected,actual, 2);
 		}
 		@Test
@@ -314,7 +315,8 @@ public class AppTest
 			double input = 1000;
 			double expected = 1832;
 			object.input(input);
-			double actual = object.calculate();
+			object.calculate();
+			double actual = object.getFahrenheit();
 			assertEquals(expected,actual, 2);
 		}
 		@Test
@@ -322,7 +324,8 @@ public class AppTest
 			double input = -1000;
 			double expected = -1768;
 			object.input(input);
-			double actual = object.calculate();
+			object.calculate();
+			double actual = object.getFahrenheit();
 			assertEquals(expected,actual, 2);
 		}
 		
@@ -331,6 +334,7 @@ public class AppTest
 			double input = 0;
 			String expected = "0 celcius = 32 Fahrengeit";
 			object.input(input);
+			object.calculate();
 			String actual = object.toString();
 			assertEquals(expected,actual);
 		}
@@ -339,6 +343,7 @@ public class AppTest
 			double input = 1000;
 			String expected = "1000 celcius = 1832 Fahrengeit";
 			object.input(input);
+			object.calculate();
 			String actual = object.toString();
 			assertEquals(expected,actual);
 		}
@@ -347,6 +352,7 @@ public class AppTest
 			double input = -1000;
 			String expected = "-1000 celcius = -1768 Fahrengeit";
 			object.input(input);
+			object.calculate();
 			String actual = object.toString();
 			assertEquals(expected,actual);
 		}
